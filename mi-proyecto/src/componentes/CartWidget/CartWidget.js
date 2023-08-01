@@ -1,4 +1,4 @@
-import cart from './cart.png'
+import cart from "../Assets/cart.png"
 
 const CartWidget = () => {
     return (
