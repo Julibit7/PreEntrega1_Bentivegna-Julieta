@@ -1,0 +1,10 @@
+.ListGroup {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+.ListGroup > div {
+  width: calc(33.33% - 10px); 
+}

@@ -1,0 +1,31 @@
+.Counter {
+    background-color: #9850e1;
+    padding: 10px;
+    color: #e9fbee;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+  }
+  
+  .Counter .Controls {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+  }
+
+  .Counter .Controls .Button {
+    background-color: #ffffff;
+    color: #6c4fe0;
+    padding: 5px 10px;
+    border: 4px solid #0d3f07;
+    box-shadow: 0px 4px 5px rgba(10, 35, 149, 0.2);
+  }
+  
+  .Counter .Controls .Number {
+    margin: 0;
+    font-size: 20px;
+    text-align: left;
+  }
+  
