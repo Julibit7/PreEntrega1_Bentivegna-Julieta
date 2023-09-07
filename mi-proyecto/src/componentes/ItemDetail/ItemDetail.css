@@ -60,3 +60,8 @@
   article .Option2 Link:hover {
     transform: scale(1);
   }
+
+  p.Info {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }

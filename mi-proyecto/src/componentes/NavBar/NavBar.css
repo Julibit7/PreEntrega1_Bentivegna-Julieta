@@ -10,17 +10,6 @@
     
   }
   
-  .Navbar h3 {
-    margin: 0;
-    font-size: 30px;
-    text-align: left;
-    text-decoration: none;
-  }
-  
-  .Navbar h2:hover {
-    transform: scale(1.10);
-  }
-  
   .Option {
     background: linear-gradient(rgb(91, 232, 48), rgb(36, 238, 144));
     border-radius: 30px;

@@ -1,29 +1,44 @@
-import './ItemDetailContainer.css'
-import { useState, useEffect } from 'react'
-import { getProductById } from '../../asyncMock'
-import ItemDetail from '../ItemDetail/ItemDetail'
-import { useParams } from 'react-router-dom'
+import "./ItemDetailContainer.css";
+import { useState, useEffect } from "react";
+import ItemDetail from "../ItemDetail/ItemDetail";
+import { useParams } from "react-router-dom";
+import { getDoc, doc } from 'firebase/firestore';
+import { db } from '../../services/Firebase/firebaseConfig';
 
 const ItemDetailContainer = () => {
-    const [product, setProduct] = useState(null)
+  const [product, setProduct] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const { itemId } = useParams();
 
-    const { itemId } = useParams()
+  useEffect(() => {
+    setLoading(true);
 
-    useEffect(() => {
-        getProductById(itemId)
-        .then(response => {
-            setProduct(response)
-        })
-        .catch(error => {
-            console.error(error)
-        })
-    }, [itemId])
+    const docRef = doc(db, 'products', itemId);
 
-    return(
-        <div className='ItemDetailContainer' >
-            <ItemDetail {...product} />
-        </div>
-    )
-}
+    getDoc(docRef)
+      .then(response => {
+        if (response.exists) {
+          const data = response.data();
+          const productAdapted = { id: response.id, ...data };
+          setProduct(productAdapted);
+        } else {
+          console.log("No such document!");
+        }
+      })
+      .catch(error => {
+        console.log(error);
+      })
+      .finally(() => {
+        setLoading(false);
+      });
 
-export default ItemDetailContainer
+  }, [itemId]);
+
+  if (loading) {
+    return <h2>Cargando...</h2>;
+  }
+
+  return product ? <ItemDetail {...product}/> : <h2>NOT FOUND</h2>;
+};
+
+export default ItemDetailContainer;
