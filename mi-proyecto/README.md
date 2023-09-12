@@ -1,70 +1,26 @@
-# Getting Started with Create React App
+# eCommerce de Zelda
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+¡Bienvenido al eCommerce de Zelda!
+ Este es mi primer proyecto de React y forma parte de mi proyecto final en CoderHouse. En este espacio, los amantes de la saga de videojuegos de "The Legend of Zelda" pueden encontrar una amplia variedad de productos relacionados con este mundo mágico.
 
-## Available Scripts
+[![Captura.jpg](https://i.postimg.cc/0QSPkJch/Captura.jpg)](https://postimg.cc/vgGpXDRv)
+## Características
 
-In the project directory, you can run:
+- **Productos**: Ofrecemos una amplia gama de productos relacionados con Zelda, incluyendo consolas, figuras, juegos y más.
 
-### `npm start`
+- **Navegación fácil**: He diseñado una interfaz de usuario intuitiva para que puedas navegar y buscar productos de manera sencilla.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Cómo empezar
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Entra al link de la tienda.
 
-### `npm test`
+2. Explora mi amplia selección de productos de Zelda.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. Agrega los productos que te gusten a tu carrito de compras.
 
-### `npm run build`
+4. Procede al pago añadiendo tus datos y recibirás tu id de registro.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+5. ¡Disfruta de tus productos de Zelda!
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+¡Espero que disfrutes de tu experiencia de compra en mi eCommerce de Zelda!

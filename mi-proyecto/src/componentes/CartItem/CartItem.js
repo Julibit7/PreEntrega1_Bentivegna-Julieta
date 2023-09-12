@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import './CartItem.css'
+import { CartContext } from "../../context/CartContext";
 
-const CartItem = ({ name, title, price, quantity }) => {
+const CartItem = ({ id, name, title, price, quantity }) => {
+    const { removeItem } = useContext(CartContext);
+
+    const handleRemoveItemClick = () => {
+        
+        removeItem(id);
+    };
+
     return (
         <div className="CartItem">
             <h4>{title}</h4>
@@ -9,6 +17,7 @@ const CartItem = ({ name, title, price, quantity }) => {
             <p>Precio: ${price}</p>
             <p>Cantidad: {quantity}</p>
             <p>Total: ${price * quantity}</p>
+            <button className="removeb" onClick={handleRemoveItemClick}>Eliminar</button>
         </div>
     );
 };

@@ -14,7 +14,6 @@ const ItemDetailContainer = () => {
     setLoading(true);
 
     const docRef = doc(db, 'products', itemId);
-
     getDoc(docRef)
       .then(response => {
         if (response.exists) {
@@ -22,7 +21,7 @@ const ItemDetailContainer = () => {
           const productAdapted = { id: response.id, ...data };
           setProduct(productAdapted);
         } else {
-          console.log("No such document!");
+          console.log("El producto no existe");
         }
       })
       .catch(error => {
@@ -31,14 +30,17 @@ const ItemDetailContainer = () => {
       .finally(() => {
         setLoading(false);
       });
-
   }, [itemId]);
 
   if (loading) {
-    return <h2>Cargando...</h2>;
+    return <div>
+    <p>Cargando...</p>
+    </div>;
   }
-
-  return product ? <ItemDetail {...product}/> : <h2>NOT FOUND</h2>;
+  return product 
+  ? <ItemDetail {...product}/> 
+  : <h2>NOT FOUND</h2>;
 };
+
 
 export default ItemDetailContainer;

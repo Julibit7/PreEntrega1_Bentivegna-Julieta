@@ -4,7 +4,8 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import NavBar from './componentes/NavBar/NavBar';
 import ItemListContainer from './componentes/ItemListContainer/ItemListContainter';
 import ItemDetailContainer from './componentes/ItemDetailContainer/ItemDetailContainer';
-import Cart from './componentes/Cart/Cart'
+import Cart from './componentes/Cart/Cart';
+import Checkout from "./componentes/Checkout/Checkout";
 import { CartProvider } from './context/CartContext';
 
 
@@ -19,7 +20,7 @@ function App() {
           <Route path='/category/:categoryId' component={ItemListContainer} />
           <Route path='/item/:itemId' component={ItemDetailContainer} />
           <Route path='/cart' component={Cart} />
-          <Route path='*' element={<h1>NOT FOUND</h1>} />
+          <Route path='/checkout' component={Checkout} />
         </Switch>
         </CartProvider>
       </BrowserRouter>
